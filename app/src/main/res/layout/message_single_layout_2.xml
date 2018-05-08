@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/message_single_layout_2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="20dp"
+    android:weightSum="10">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/message_profile_layout"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_weight="0"
+        android:src="@drawable/shinchen" />
+
+    <TextView
+        android:id="@+id/name_text_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/message_profile_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="Display Name"
+        android:textColor="@android:color/black"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/message_text_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name_text_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:background="@drawable/message_text_background_2"
+        android:padding="10dp"
+        android:text="Message Text"
+        android:textColor="@color/darkColor"
+        android:textSize="14sp" />
+
+
+    <TextView
+        android:id="@+id/time_text_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/message_image_layout"
+        android:layout_marginStart="17dp"
+        android:layout_toEndOf="@+id/message_text_layout"
+        android:text="00:00"
+        android:textSize="12sp" />
+
+    <ImageView
+        android:id="@+id/message_image_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/message_text_layout"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerCrop" />
+
+
+</RelativeLayout>
